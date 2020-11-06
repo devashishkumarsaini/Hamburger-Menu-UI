@@ -1,0 +1,88 @@
+.product{
+    font-size: 18px;
+    background: #dcdcdc;
+    color:#696969;
+    padding:60px 0px 50px 140px;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+
+.product .one h6,
+.product .two h6,
+.product .three h6,
+.product .four h6{
+    position: relative;
+    color:black;
+    text-transform: uppercase;
+}
+
+.product .one h6::before,
+.product .two h6::before,
+.product .three h6::before,
+.product .four h6::before{
+    content: "";
+    position: absolute;
+    left: -50px;
+    top:10px;
+    width: 35px;
+    border-bottom: 1px solid black;
+    transition: all ease 0.3s ;
+}
+
+
+.product .one p,
+.product .two p,
+.product .three p,
+.product .four p{
+    color:#696969;
+    transition: all ease 0.3s;
+}
+.product .one p:hover,
+.product .two p:hover,
+.product .three p:hover,
+.product .four p:hover{
+    color:black
+    
+}
+
+
+.product .one p:hover::after,
+.product .two p:hover::after,
+.product .three p:hover::after,
+.product .four p:hover::after
+{
+    content: "→";
+    margin:0 15px;
+    color:black
+}
+
+.product .two,
+.product .three,
+.product .four{
+    margin-top: 40px;
+}
+
+.innovation{
+    background-color: #dcdcdc;
+}
+
+.innovation .one{
+    height: 75vh;
+    padding:100px 0px 50px 50px;
+}
+
+.innovation .one h3{
+    color:#696969;
+    margin: 20px 0px;
+    transition: all ease 0.3s;
+}
+.innovation .one h3:hover{
+    color:black;
+}
+
+.innovation .one h3:hover::after{
+    content: "→";
+    margin:0px 15px;
+    color:black;
+}
